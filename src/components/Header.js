@@ -1,0 +1,51 @@
+import { Link } from 'react-router-dom'
+import Logo from '../images/netflix.svg'
+const  Header = () => {
+    return (
+       <>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">
+      <img src={Logo} alt=""/>
+      Netflix tunisie </a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link">
+        <Link to="/">Home </Link> </a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" >
+          <Link to="/download">Download </Link>
+        </a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" >
+      <Link to="/anywhere">anywhere </Link>
+      </a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" >
+      <Link to="/profit">profit </Link>
+      </a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" >
+      <Link to="/movie">movie  </Link>
+      </a>
+      </li>
+    </ul>
+   
+  </div>
+</nav>
+
+</> 
+    )
+}
+
+export default Header
+
